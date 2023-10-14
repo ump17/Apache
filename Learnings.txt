@@ -1,0 +1,27 @@
+1. Apache Kafka is like a communication system that helps different parts of a computer system exchange data by publishing 
+   and subscribing to topics.
+2.Try this for windows:
+
+For zookeeper:
+
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+For Kafka Server:
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+3. to create topic-
+>bin\windows\kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
+
+4. produce-
+>bin\windows\kafka-console-producer.bat --topic user-topic --bootstrap-server localhost:9092
+
+5.consume-
+bin\windows\kafka-console-consumer.bat --topic user-topic --from-beginning --bootstrap-server localhost:9092
+
+
+spring.kafka.producer.bootstrap-servers=localhost:9092
+spring.kafka.producer.key-serializer= org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer
+
+
+

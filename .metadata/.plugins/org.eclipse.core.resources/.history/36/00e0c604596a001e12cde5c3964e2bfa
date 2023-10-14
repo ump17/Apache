@@ -1,0 +1,5 @@
+package com.endUser;
+
+public class KafkaConfig {
+
+}

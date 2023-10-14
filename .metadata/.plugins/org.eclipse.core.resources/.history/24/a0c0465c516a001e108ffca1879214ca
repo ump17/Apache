@@ -1,0 +1,20 @@
+package com.deliveryBoy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import service.KafkaService;
+
+@SpringBootApplication
+public class DeliveryBoyApplication {
+
+	private Logger logger = LoggerFactory.getLogger(KafkaService.class);
+
+	public static void main(String[] args) {
+		SpringApplication.run(DeliveryBoyApplication.class, args);
+		System.out.println("started------------>");
+	}
+
+}

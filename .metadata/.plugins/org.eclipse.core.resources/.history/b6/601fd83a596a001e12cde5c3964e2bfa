@@ -1,0 +1,11 @@
+package com.endUser;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class KafkaConfig {
+
+	public void updatedLocation(String value) {
+		
+	}
+}

@@ -1,0 +1,5 @@
+package configPackage;
+
+public class KafkaConfig {
+
+}
